@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAtu kertas gunting</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        img{
+            max-width: 160px;
+        }
+        section{
+            margin: 0 auto;
+            border: 2px solid black;
+            max-width: 600px;
+            overflow: auto;
+        }
+        #com{
+            border-radius: 15px 15px 0px 0px;
+            height: 250px;
+            
+        }
+        #com img{
+            margin-top: 50px;
+        }
+        #player{
+            height: 250px;
+            border-radius: 0px 0px 15px 15px;
+        }
+        #player img{
+            margin-top: 50px;
+        }
+        .boardBot {
+            float: left;
+            margin-left: 100px;
+        }
+        .boardPlayer{
+            float: right;
+            margin-right: 100px;
+        }
+        #score{
+            border-radius: 20px;
+        }
+        #hasil{
+            position:absolute;
+            width: 150px;
+            left: 50%;
+            margin-left: -75px;
+            bottom: 225px;
+            background-color: aliceblue;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ayo main Batu kertas gunting</h1>
+    <section id="com">
+        <img src="batu.png" alt="">
+    </section>
+    <section id="hasil">
+        <h2>hasil</h2>
+    </section>
+    <section id="player">
+        <img src="batu.png" alt="">
+        <img src="kertas.png" alt="">
+        <img src="gunting.png" alt="">
+    </section>
+    <section id="score">
+        <h1>
+            SCORE
+        </h1>
+        <div class="boardBot">
+            <h1>Bot:</h1>
+            <p>0</p>
+        </div>
+        <div class="boardPlayer">
+            <h1>Player:</h1>
+            <p>0</p>
+        </div>
+    </section>
+
+    <script src="bkg.js"></script>
+</body>
+</html>
